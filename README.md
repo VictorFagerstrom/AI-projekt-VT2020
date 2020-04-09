@@ -41,7 +41,12 @@ Det som händer i koden sen är att vi hämtar en .tar-fil från våran google d
 AIn kommer att skapa många posts men vi lägger alla i en array och väljer att använda den första posten. Sedan vill vi posta den nyskrivna posten och för det använder vi återigen Praw. Både skapa posten och uploada den har vi i en while-loop så vi kan lägga upp koden på heroku så att den kan göra detta om och omo igen.
 Till sist säger vi att koden ska "sova" i ett visst tidsintervall så att vi inte skickar för många posts till reddit.
 
-## Problem jag har haft.
+## Problem jag har haft
 
+Som alltid med programmeringsprojekt stötte jag även med detta på småproblem som relativt snabbt gick att lösa. Det var allt ifrån att lära sig hur Praw fungerade till hur man bäst skulle forma datan så AIn kan göra ett så bra jobb som möjligt. Men det stora problemet kom precis i slutet när jag skulle göra så att koden själv
+hämtade checkpointen så att den skulle kunna köra av sig själv. Jag fick då ett fel där den inte hittade rätt sökväg när den skulle använda checkpointen. Jag hittade inget smidigt sätt att lösa detta på så det jag gjorde var att träna om en ny checkpoint och döpde den till det namn som koden letade efter. Detta gjorde dock att 
+själva AIn inte blev perfekt tränad vilket påverkade texterna den skapade.
 
 ## Andra tankar om projektet
+
+Överlag är jag väl nöjd med projektet men som sagt är själva AIn långt ifrån perfekt. Den kan skriva texter men de kan tyvärr vara något osammanhängande ibland. Däremot funkar allt annat superbra, till exempel datainsamling och uppladdning till reddit. Men skulle jag göra om projektet skulle jag försöka göra AIn mycket bättre än vad jag lyckades med den här gången. 
