@@ -19,12 +19,19 @@ Det här är huvudfilen där AIn körs. Men innan man kan köra den var jga tvun
 För att kunna köra filen  där du skapar texter behöver du importera följande bibliotek:
 
 import gpt_2_simple as gpt2
+
 import time
+
 import random
+
 import tarfile
+
 import requests
+
 import os
+
 from datetime import datetime, timedelta
+
 import praw
 
 Det som händer i koden sen är att vi hämtar en .tar-fil från våran google drive som vi har länkat till colaben. Den innehåller checkpointen som skapades när AIn tränades. Sedan extractar vi den så att vi kan använda den. Nu har vi kommit till det att vi ska skapa en ny post. 
