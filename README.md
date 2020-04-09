@@ -7,13 +7,13 @@ Jag har gjort en Reddit-bot som tar posts från subredditen r/Stories och genom 
 
 ## Hur har jag gjort?
 
-###webscrape.py
+webscrape.py
 
 Det första steget är att hämta data som AIn kan arbeta med. Som sagt tar den datan från subredditen r/Stories. För att hämta datan från reddit använder jag ett bibliotek till python som heter Praw. För att kunna använda Praw måste du installera det tillhörande biblioteket.
 Det jag gör sedan är att med hjälp av Praw hämta data från reddit som jag sedan lägger i en ny textfil. Jag tar de 1000 högst rankade posterna på subredditen. När jag lägger över datan i den nya filen separerar jag även de enskilda posterna för att det ska bli enkare för AIn att skapa en bra post.
 Koden för detta ligger i filen webscrape.py. För att kunna köra den filen behöver du också ladda ned json.
 
-###lol.py
+lol.py
 
 Det här är huvudfilen där AIn körs. Men innan man kan köra den var jga tvungen att träna en AI. Det gjorde jag i den google colab-sidan som jag länkar här: 
 
