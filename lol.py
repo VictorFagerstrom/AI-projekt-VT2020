@@ -1,20 +1,3 @@
-
-
-
-
-# string = gpt2.generate(sess, length=850, return_as_list=True)[0]
-# subreddit = reddit.subreddit('BotsParadise')
-# post = string.split('.')
-# lista = post.pop()
-# post = list(dict.fromkeys(post))
-# text = '.'.join(post)
-# text1 = text + '.'
-# subreddit.submit(title= 'I have written a bot who autocreates post based on the stories subreddit', selftext=text1)
-
-
-
-
-
 import gpt_2_simple as gpt2
 import time
 import random
@@ -23,7 +6,7 @@ import requests
 import os
 from datetime import datetime, timedelta
 import praw
-import pandas as pd
+
 
 reddit = praw.Reddit(client_id='RNwsyJXptJ1qZg', 
                      client_secret='dElzzt5VKRxqePiY689MmdSYc2A', 
