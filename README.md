@@ -15,7 +15,7 @@ Koden för detta ligger i filen webscrape.py. För att kunna köra den filen beh
 
 lol.py
 
-Det här är huvudfilen där AIn körs. Men innan man kan köra den var jga tvungen att träna en AI. Det gjorde jag i den google colab-sidan som jag länkar här: 
+Det här är huvudfilen där AIn körs. Men innan man kan köra den är man tvungen att träna en AI. Det gjorde jag i den google colab-sidan som jag länkar här: 
 
 https://colab.research.google.com/drive/1Eoyl3dkj_csNsy7-KcMIE0rvewf2ZWHm#scrollTo=VHdTL8NDbAh3.
 
