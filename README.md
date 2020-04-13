@@ -45,7 +45,7 @@ Till sist säger vi att koden ska "sova" i ett visst tidsintervall så att vi in
 
 Som alltid med programmeringsprojekt stötte jag även med detta på småproblem som relativt snabbt gick att lösa. Det var allt ifrån att lära sig hur Praw fungerade till hur man bäst skulle forma datan så AIn kan göra ett så bra jobb som möjligt. Men det stora problemet kom precis i slutet när jag skulle göra så att koden själv
 hämtade checkpointen så att den skulle kunna köra av sig själv. Jag fick då ett fel där den inte hittade rätt sökväg när den skulle använda checkpointen. Jag hittade inget smidigt sätt att lösa detta på så det jag gjorde var att träna om en ny checkpoint och döpde den till det namn som koden letade efter. Detta gjorde dock att 
-själva AIn inte blev perfekt tränad vilket påverkade texterna den skapade.
+själva AIn inte blev perfekt tränad vilket påverkade texterna den skapade. Jag lyckades inte heller få upp koden på heroku men jag har i alla fall en kod som skulle kunna köras på heroku.
 
 ## Andra tankar om projektet
 
