@@ -7,6 +7,7 @@ import os
 from datetime import datetime, timedelta
 import praw
 
+#redditintsällningar
 
 reddit = praw.Reddit(client_id='RNwsyJXptJ1qZg', 
                      client_secret='dElzzt5VKRxqePiY689MmdSYc2A', 
@@ -14,13 +15,14 @@ reddit = praw.Reddit(client_id='RNwsyJXptJ1qZg',
                      username='Author_bot', 
                      password='qwerty1234')
 
+#sökväg för att hämta checkpoint
 filepath="checkpoint_run1.tar"
 googefileid= "1uO-U5_P5dQU8XXFlfbn14JBa3jukwbe-"
 
 #https://drive.google.com/open?id=1uO-U5_P5dQU8XXFlfbn14JBa3jukwbe-
 
 
-
+#extractar chekpointen från .tar-filen
 def extract():
     """Copies the checkpoint folder from a mounted Google Drive."""
     with tarfile.open(filepath, 'r') as tar:
@@ -29,9 +31,7 @@ def extract():
     print("File",filepath, "Removed!")
 
 
-
-
-
+#laddar ner .tar-fil med checkpointen i
 def download_file_from_google_drive(id, destination):
     def get_confirm_token(response):
         for key, value in response.cookies.items():
@@ -67,7 +67,7 @@ extract()
 sess = gpt2.start_tf_sess()
 gpt2.load_gpt2(sess)
 
-
+#skapar en post
 def createpost():
     string = gpt2.generate(sess, length=500, return_as_list=True)[0]   
     post = string.split('.')
@@ -77,6 +77,7 @@ def createpost():
     redditpost = text + '.'
     return redditpost
 
+#postar texten till reddit
 def post_tweet(redditpost, now):
     try:
         subreddit = reddit.subreddit('BotsParadise')
@@ -84,6 +85,7 @@ def post_tweet(redditpost, now):
     except:
         print('Post failed')
 
+#whileloop där allting körs, innehåller tidsintervall för att inte spamma reddit 
 while True: 
     redditpost = createpost()  
     now = datetime.now()
