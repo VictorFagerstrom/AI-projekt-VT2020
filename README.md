@@ -17,7 +17,7 @@ lol.py
 
 Det här är huvudfilen där AIn körs. Men innan man kan köra den är man tvungen att träna en AI. Det gjorde jag i den google colab-sidan som jag länkar här: 
 
-https://colab.research.google.com/drive/1Eoyl3dkj_csNsy7-KcMIE0rvewf2ZWHm#scrollTo=VHdTL8NDbAh3.
+https://colab.research.google.com/drive/1OG1HxBMdIMyWfc0qP2rz6tvQwtx9Gikn
 
 För att kunna köra filen där du skapar texter behöver du importera följande bibliotek:
 
@@ -40,6 +40,8 @@ import praw
 Det som händer i koden sen är att vi hämtar en .tar-fil från våran google drive som vi har länkat till colaben. Den innehåller checkpointen som skapades när AIn tränades. Sedan extractar vi den så att vi kan använda den. Nu har vi kommit till det att vi ska skapa en ny post. 
 AIn kommer att skapa många posts men vi lägger alla i en array och väljer att använda den första posten. Sedan vill vi posta den nyskrivna posten och för det använder vi återigen Praw. Både skapa posten och uploada den har vi i en while-loop så vi kan lägga upp koden på heroku så att den kan göra detta om och omo igen.
 Till sist säger vi att koden ska "sova" i ett visst tidsintervall så att vi inte skickar för många posts till reddit.
+
+För att förtydliga så borde du bara behöva köra lol.py för att boten ska fungera, dvs om du har laddat ner nödvändiga bibliotek.
 
 ## Problem jag har haft
 
